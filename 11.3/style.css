@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background-color: antiquewhite;
+}
+
+.container {
+  margin: 2rem;
+  /* padding: 5rem; */
+  background-color: slategrey;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.container > div {
+  width: auto;
+  height: 100px;
+  border: 1px solid red;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-left: -1px;
+}
+
+.container .flexbox1 {
+  background-color: green;
+}
+
+.container .flexbox2 {
+  background-color: red;
+}
+
+.container .flexbox3 {
+  background-color: blue;
+}
+/* In this updated code, I added flex-shrink: 0; to .container > div to prevent the flex items from shrinking and maintaining their original size. I also adjusted the margin-left to -1px to remove the spacing between the flex boxes.
+
+Please save and refresh your webpage after applying these changes. The flex boxes should now be aligned at the end and right of the container without any space between them, appearing squeezed together.
+
+
+
+
+
+User
+do you understand my question?
+ChatGPT
+I apologize for the confusion. To clarify, you want the flex boxes to be aligned at the end and right of the container without any spacing between them.
+
+To achieve this, you can modify the CSS code as follows: */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background-color: antiquewhite;
+}
+
+.container {
+  margin: 2rem;
+  
+  background-color: slategrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  height: 15rem;
+}
+
+.container > div {
+  width: 9rem;
+  height: 100px;
+  border: 1px solid red;
+  font-size: 1.2rem;
+}
+
+.container .flexbox1 {
+  background-color: green;
+}
+
+.container .flexbox2 {
+  background-color: red;
+}
+
+.container .flexbox3 {
+  background-color: blue;
+}
+
