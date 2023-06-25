@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 200px;
+    
     text-decoration: none;
     position: absolute;
     border: 3px solid black;
@@ -21,6 +21,7 @@ header {
 
 .logo{
     text-decoration: none;
+    justify-content: start;
     
 }
     
@@ -28,6 +29,7 @@ header {
 .main a{
     text-decoration: none;
     padding-left: 30px;
+    justify-content: end;
     
 }
     

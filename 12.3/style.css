@@ -1,0 +1,41 @@
+.box {
+    position: relative;
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    margin: 50px;
+    
+  }
+  
+  .box::before,
+  .box::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+  }
+  
+  .box::before {
+    width: 50%;
+    left: 0;
+    background-color: purple;
+    
+  }
+  
+  .box::after {
+    width: 50%;
+    right: 0;
+    background-color: red;
+  }
+
+  :hover::after{
+  
+    background-color: aqua;
+  }
+
+  :hover:before{
+    background-color: chocolate;
+  }
+  
+  
+
+  

@@ -41,20 +41,7 @@ body {
 .container .flexbox3 {
   background-color: blue;
 }
-/* In this updated code, I added flex-shrink: 0; to .container > div to prevent the flex items from shrinking and maintaining their original size. I also adjusted the margin-left to -1px to remove the spacing between the flex boxes.
 
-Please save and refresh your webpage after applying these changes. The flex boxes should now be aligned at the end and right of the container without any space between them, appearing squeezed together.
-
-
-
-
-
-User
-do you understand my question?
-ChatGPT
-I apologize for the confusion. To clarify, you want the flex boxes to be aligned at the end and right of the container without any spacing between them.
-
-To achieve this, you can modify the CSS code as follows: */
 
 * {
   margin: 0;
